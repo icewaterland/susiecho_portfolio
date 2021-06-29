@@ -647,6 +647,12 @@ h3 {
   }
 }
 
+.round-border-image {
+  img {
+    border-radius: 20px;
+  }
+}
+
 // Content
 #content-column {
   display: grid;
