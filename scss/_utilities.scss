@@ -358,6 +358,37 @@ h3 {
   }
 }
 
+.project-section-subtitle-forth {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.highlight-numb {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: $reviewty-color;
+  text-align: center;
+}
+
+.highlight-inner-center {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+
+  &-kr {
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    word-spacing: -0.38px;
+  }
+}
+
 .normal-text-bold {
   font-weight: 500;
 }

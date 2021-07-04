@@ -292,6 +292,32 @@ h3 {
     color: #4d5256;
     text-align: center; }
 
+.project-section-subtitle-forth {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600; }
+
+.highlight-numb {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: #fdba00;
+  text-align: center; }
+
+.highlight-inner-center {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center; }
+  .highlight-inner-center-kr {
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    word-spacing: -0.38px; }
+
 .normal-text-bold {
   font-weight: 500; }
 
@@ -1794,3 +1820,30 @@ img {
   .principle-a-texts {
     padding: 1.5rem;
     margin: 0; }
+
+.prototype {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  z-index: -1; }
+  .prototype .gif_text {
+    padding: 0rem 0;
+    padding-left: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .prototype .gif_text .gif_inside_text {
+      width: 100%;
+      padding: 0rem 0rem;
+      padding-left: 3rem; }
+  .prototype .gif {
+    width: 80%;
+    height: auto;
+    padding: 2rem 0rem;
+    padding-left: 20%; }
+    .prototype .gif img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.1); }
