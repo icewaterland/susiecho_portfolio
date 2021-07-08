@@ -1839,7 +1839,7 @@ img {
   .prototype .gif {
     width: 80%;
     height: auto;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
     padding-left: 20%; }
     .prototype .gif img {
       display: flex;
