@@ -300,7 +300,7 @@
     }
     .painpoints {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 0rem;
       z-index: -1;
     }
@@ -362,6 +362,21 @@
           }
         }
       }
+    }
+  }
+  #painpoint {
+    .grid-full-image-container {
+      position: relative;
+      margin: 0rem 1rem;
+      width: auto;
+      height: 100%;
+      image-rendering: auto;
+    }
+    .painpoints {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0rem;
+      z-index: -1;
     }
   }
 }
