@@ -17,13 +17,13 @@
 
 .container {
   max-width: $website-width;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   margin: auto;
 }
 
 .project-container {
   max-width: $project-container-width;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   margin: auto;
   overflow: hidden;
 }
@@ -35,8 +35,9 @@
 
 .inner-full-image-container {
   width: 100% no-repeat / cover;
-  height: 100%;
+  height: auto;
   image-rendering: auto;
+  overflow-x: hidden;
 }
 
 .grid-full-image-container {
@@ -47,6 +48,7 @@
   width: auto;
   height: 100%;
   image-rendering: auto;
+  z-index: -1;
 }
 
 .inner-inner-section-container {
@@ -111,9 +113,10 @@
   border-bottom: 0.0625rem solid;
   opacity: 0.2;
   width: 1080px;
-  padding: 0.5rem 0;
+  padding: 0rem 0;
   border-color: $medium-color;
   z-index: -1;
+  overflow-x: hidden;
 }
 
 .divider {
@@ -221,7 +224,7 @@ h3 {
   color: $dark-color;
   font-size: 1.1rem;
   padding: 0.2rem 0;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   letter-spacing: -0.38px;
 }
 
@@ -252,7 +255,7 @@ h3 {
   color: $dark-color;
   font-size: 1.1rem;
   padding: 0.2rem 0;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
 }
 
 .content_text_en_inner {
@@ -370,6 +373,14 @@ h3 {
   font-style: italic;
   color: $reviewty-color;
   text-align: center;
+}
+
+.highlight-numb-side {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: $reviewty-color;
+  text-align: center;
+  font-display: block;
 }
 
 .highlight-inner-center {

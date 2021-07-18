@@ -13,6 +13,7 @@ body {
   color: $dark-color;
   line-height: 1.6;
   background: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -295,6 +296,10 @@ img {
     align-items: center;
     justify-content: center;
 
+    .footer-icons {
+      display: flex;
+      flex-direction: row;
+    }
     .p_bold {
       padding: 0 1rem;
     }
@@ -348,6 +353,7 @@ img {
   display: flex;
   align-content: center;
   justify-content: center;
+  overflow-x: hidden;
 
   img {
     position: relative;
@@ -381,11 +387,58 @@ img {
   z-index: -1;
 }
 
+.personas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  z-index: -1;
+}
+
 .mission {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   z-index: -1;
+
+  &-main-text {
+    text-align: center;
+
+    p {
+      font-weight: 600;
+      color: $weak-color;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-size: 0.8rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      padding-bottom: 1.5rem;
+      padding-top: 0.4rem;
+    }
+  }
+
+  &-box {
+    background: #f9fafc;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    margin-bottom: rem;
+    z-index: -1;
+  }
+
+  &-text-a {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 0rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .assumptions {
@@ -395,42 +448,34 @@ img {
   z-index: -1;
 }
 
-#research-inner1,
-#research-inner2,
-#research-inner3 {
+.process {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem 6rem;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  grid-gap: 1rem;
+  background: #f9fafc;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  z-index: -1;
 
-  img {
-    box-shadow: $box-shadow;
-    border-radius: 10px;
-    margin: 0.5rem;
+  &-text {
+    padding-right: 1rem;
   }
+}
 
-  li {
-    list-style-type: disc;
-    padding-bottom: 0.2rem;
-    letter-spacing: -0.38px;
-    padding-bottom: 0.5rem;
-  }
-
+#research-inner {
   .research-text {
-    &1 {
-      align-items: center;
-      justify-content: center;
-      padding-top: 6rem;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    z-index: -1;
 
-    &2 {
-      align-items: center;
-      justify-content: center;
-      padding-top: 6rem;
-    }
-
-    &3 {
-      align-items: center;
-      justify-content: center;
+    ul {
+      li {
+        list-style-type: disc;
+        padding-bottom: 0.5rem;
+      }
     }
   }
 }
@@ -451,7 +496,7 @@ img {
 .principle-boxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   padding: 0rem 0rem;
 }
 
@@ -507,5 +552,5 @@ img {
 .self {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 2rem;
 }
