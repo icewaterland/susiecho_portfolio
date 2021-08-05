@@ -327,6 +327,16 @@ img {
   width: 100%;
 }
 
+#overview2 {
+  ul {
+    li,
+    .line-fixer {
+      padding-left: 1rem;
+      padding-bottom: 0.6rem;
+    }
+  }
+}
+
 // Lock page
 .lock-bg {
   background-color: rgb(237, 239, 245);
@@ -552,5 +562,33 @@ img {
 .self {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 4rem;
+
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+
+    li {
+      padding-bottom: 0.8rem;
+      letter-spacing: -0.38px;
+      font-size: 1.05rem;
+    }
+  }
+}
+
+// Reviewty Translating
+
+.test-approach {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  z-index: -1;
+
+  .test {
+    background: #f9fafc;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    margin-bottom: 1rem;
+    z-index: -1;
+  }
 }
