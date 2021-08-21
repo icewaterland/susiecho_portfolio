@@ -66,7 +66,7 @@
   padding-left: 0rem; }
 
 .full-bg-container {
-  background-color: #f6f8fa;
+  background-color: #f9fafc;
   padding: 2rem 0rem;
   margin: 0;
   width: 100% no-repeat / cover; }
@@ -186,6 +186,10 @@ h3 {
 
 .p_bold {
   font-weight: 600;
+  padding-top: 0.5rem; }
+
+.p_medium_bold {
+  font-weight: 500;
   padding-top: 0.5rem; }
 
 .content_text_kr {
@@ -340,6 +344,12 @@ h3 {
   color: #007bff;
   text-align: center; }
 
+.highlight-numb-mallforever {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: #e51a23;
+  text-align: center; }
+
 .highlight-numb-side {
   font-size: 1.7rem;
   font-style: italic;
@@ -418,6 +428,9 @@ h3 {
 
 .content-inner-title-highlight {
   font-weight: 600; }
+
+.link_simple {
+  text-decoration: underline; }
 
 .btn {
   display: inline-block;
@@ -2283,3 +2296,65 @@ img {
     padding: 2rem 2rem;
     margin-bottom: 1rem;
     z-index: -1; }
+
+#hi-fi .added-solution {
+  display: grid;
+  align-items: center;
+  background: #f9fafc;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  z-index: -1; }
+  #hi-fi .added-solution-text .project-section-subtitle-third {
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem; }
+  #hi-fi .added-solution-text ul {
+    margin-left: 3%; }
+  #hi-fi .added-solution-text li {
+    list-style-type: disc;
+    padding-right: 1rem; }
+    #hi-fi .added-solution-text li p {
+      font-size: 1rem; }
+    #hi-fi .added-solution-text li span {
+      font-weight: 500; }
+
+#empathise .interview_apporach {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  z-index: -1; }
+  #empathise .interview_apporach .interview {
+    background: #f9fafc;
+    border-radius: 20px;
+    padding-top: 0.8rem;
+    padding-bottom: 1.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1rem;
+    z-index: -1; }
+    #empathise .interview_apporach .interview .project-section-subtitle-third {
+      font-size: 1.1rem;
+      padding-bottom: 1rem; }
+    #empathise .interview_apporach .interview .content_text_kr,
+    #empathise .interview_apporach .interview .content_text {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding-bottom: 0.4rem; }
+
+#service-analysis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem; }
+  #service-analysis .analysis {
+    display: grid;
+    grid-template-rows: repeat(1fr, 1fr);
+    background: #f9fafc;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    border-radius: 20px;
+    z-index: -1; }
+    #service-analysis .analysis-img {
+      padding: 0rem 1.5rem; }
