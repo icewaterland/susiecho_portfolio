@@ -572,6 +572,20 @@ img {
       padding-bottom: 0.8rem;
       letter-spacing: -0.38px;
       font-size: 1.05rem;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+.self-normal {
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+
+    li {
+      padding-bottom: 0.8rem;
+      letter-spacing: -0.38px;
+      font-size: 1.05rem;
     }
   }
 }
@@ -630,6 +644,16 @@ img {
   }
 }
 
+// Mallforever
+#initial-hypo {
+  .imgs_order {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.4rem;
+    z-index: -1;
+  }
+}
+
 // K-town
 
 #empathise {
@@ -682,5 +706,61 @@ img {
     &-img {
       padding: 0rem 1.5rem;
     }
+  }
+}
+
+.wrap {
+  background: #f9fafc;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+#assumption {
+  .imgs_order {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.7rem;
+    z-index: -1;
+  }
+}
+
+.bp_mission {
+  .mission-texts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.7rem;
+    z-index: -1;
+  }
+
+  .mission-text-a {
+    background: #f9fafc;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: 20px;
+    z-index: -1;
+
+    h3 {
+      font-weight: 400;
+      font-size: 1rem;
+      padding-top: 2rem;
+      text-align: left;
+    }
+  }
+}
+
+.gif_bp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 40%;
+    border-radius: 10px;
   }
 }

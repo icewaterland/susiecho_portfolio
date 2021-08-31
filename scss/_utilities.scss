@@ -362,14 +362,14 @@ h3 {
 .project-section-subtitle {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .project-section-subtitle-inner {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .project-section-subtitle-third {
@@ -423,11 +423,26 @@ h3 {
   text-align: center;
 }
 
+.highlight-numb-bp-big {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: $buskingplay-color;
+  text-align: center;
+}
+
 .highlight-numb-side {
   font-size: 1.7rem;
   font-style: italic;
   color: $reviewty-color;
   text-align: center;
+  font-display: block;
+}
+
+.highlight-numb-bp {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: $buskingplay-color;
+  text-align: left;
   font-display: block;
 }
 
@@ -519,7 +534,21 @@ h3 {
 
 .link_simple {
   text-decoration: underline;
+  color: $dark-color;
 }
+
+.link_simple:hover {
+  color: $medium-color;
+}
+.link_simple_opposite {
+  text-decoration: underline;
+  color: $medium-color;
+}
+
+.link_simple_opposite:hover {
+  color: $dark-color;
+}
+
 // Button
 .btn {
   display: inline-block;
@@ -750,11 +779,20 @@ h3 {
 #content-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   padding: 0rem 0rem;
+
+  ul {
+    display: grid;
+    grid-template-rows: repeat(1fr, 1fr);
+    background: #f9fafc;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    z-index: -1;
+  }
 
   .column-inner-title {
     font-size: 1.15rem;
-    padding: 0.5rem 0;
+    padding-bottom: 1rem;
   }
 }
