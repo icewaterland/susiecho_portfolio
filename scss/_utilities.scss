@@ -107,6 +107,10 @@
   padding: 2% 0rem;
 }
 
+.space-shortest {
+  padding: 0.5% 0rem;
+}
+
 .full-divider {
   position: relative;
   border: 0;
@@ -238,20 +242,46 @@ h3 {
 
 .content_text_kr {
   color: $dark-color;
+  word-break: keep-all;
   font-size: 1.1rem;
   padding: 0.2rem 0;
-  line-height: 1.9rem;
+  line-height: 2rem;
   letter-spacing: -0.38px;
 }
 
 .content_text_kr_center {
   color: $dark-color;
   text-align: center;
-  width: 55%;
+  width: 65%;
+  word-break: keep-all;
   margin: auto;
   font-size: 1.1rem;
   padding-top: 0.6rem;
-  line-height: 1.9rem;
+  line-height: 2rem;
+  letter-spacing: -0.38px;
+}
+
+.content_text_kr_center_rt {
+  color: $dark-color;
+  text-align: center;
+  width: 65%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  line-height: 2rem;
+  letter-spacing: -0.38px;
+}
+
+.content_text_kr_center_wide {
+  color: $dark-color;
+  text-align: center;
+  width: 60%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  line-height: 2rem;
   letter-spacing: -0.38px;
 }
 
@@ -259,7 +289,7 @@ h3 {
   color: $dark-color;
   font-size: 1rem;
   padding: 0.4rem 0;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
   letter-spacing: -0.2px;
 }
 
@@ -281,6 +311,7 @@ h3 {
 .content_text_en {
   color: $dark-color;
   font-size: 1.1rem;
+  word-break: normal;
   padding: 0.2rem 0;
   line-height: 1.9rem;
 }
@@ -295,7 +326,7 @@ h3 {
 
 .content_text_highlight {
   color: $dark-color;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .p_normal {
@@ -392,14 +423,16 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
+  word-break: keep-all;
 }
 .project-section-subtitle-forth-center {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
+  word-break: keep-all;
 }
 
 .highlight-numb {
@@ -445,6 +478,14 @@ h3 {
   font-display: block;
 }
 
+.highlight-numb-reviewty {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: $reviewty-color;
+  text-align: center;
+  font-display: block;
+}
+
 .highlight-numb-bp {
   font-size: 1.7rem;
   font-style: italic;
@@ -479,6 +520,7 @@ h3 {
   font-size: 0.9rem;
   padding: 0.2rem 0;
   line-height: 1.6rem;
+  word-break: keep-all;
 }
 
 .image-description {
@@ -536,7 +578,7 @@ h3 {
 }
 
 .content-inner-title-highlight {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .link_simple {
