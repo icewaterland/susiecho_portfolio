@@ -694,6 +694,19 @@ img {
     padding: 2rem 2rem;
     margin-bottom: 1rem;
     z-index: -1;
+
+    ul {
+      margin-left: 4%;
+
+      li {
+        list-style-type: disc;
+        margin-left: 3%;
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
   }
 }
 
@@ -703,6 +716,93 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.4rem;
     z-index: -1;
+  }
+}
+
+#ideate {
+  .small_wrap {
+    display: grid;
+    background: #f9fafc;
+    width: 90%;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    z-index: -1;
+
+    ul {
+      margin-left: 4%;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+#test {
+  .wrap_vertical {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    z-index: -1;
+
+    .wrap {
+      display: grid;
+      background: #f9fafc;
+      border-radius: 20px;
+      padding: 2rem 2rem;
+      z-index: -1;
+      p {
+        font-size: 1rem;
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 6%;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+#test {
+  .small_wrap {
+    display: grid;
+    background: #f9fafc;
+    width: 90%;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    z-index: -1;
+
+    ul {
+      list-style-type: disc;
+      margin-left: 3%;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+#evaluation {
+  .small_wrap {
+    display: grid;
+    background: #f9fafc;
+    width: 90%;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    z-index: -1;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  ul {
+    li,
+    .line-fixer {
+      padding-left: 1rem;
+      padding-bottom: 0.6rem;
+    }
   }
 }
 
@@ -756,13 +856,31 @@ img {
 }
 
 #validated-hypo {
-  #content-column {
-    ul {
-      margin-left: 0%;
-    }
-    li {
-      padding-right: 1rem;
-      padding-bottom: 0.5rem;
+  .small_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    z-index: -1;
+
+    .wrap {
+      display: grid;
+      background: #f9fafc;
+      border-radius: 20px;
+      padding: 2rem 2rem;
+      z-index: -1;
+
+      .column-inner-title {
+        font-size: 1.2rem;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 6%;
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
     }
   }
 }
@@ -777,7 +895,12 @@ img {
     z-index: -1;
 
     ul {
-      margin-left: 4%;
+      margin-left: 3%;
+    }
+    li {
+      list-style-type: disc;
+      padding-right: 1rem;
+
       p {
         font-size: 1rem;
       }
@@ -797,10 +920,7 @@ img {
     .interview {
       background: #f9fafc;
       border-radius: 20px;
-      padding-top: 0.8rem;
-      padding-bottom: 1.8rem;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+      padding: 1.5rem 1.5rem;
       margin-bottom: 1rem;
       z-index: -1;
 
@@ -809,11 +929,16 @@ img {
         padding-bottom: 1rem;
       }
 
-      .content_text_kr,
-      .content_text {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        padding-bottom: 0.4rem;
+      ul {
+        list-style-type: disc;
+        margin-left: 8%;
+
+        .content_text_kr,
+        .content_text {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding-bottom: 0.4rem;
+        }
       }
     }
   }
@@ -822,6 +947,97 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
+  }
+}
+
+#empathise {
+  #research {
+    .wrap_new {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      z-index: -1;
+
+      .new {
+        display: grid;
+        background: #f9fafc;
+        border-radius: 20px;
+        padding: 2rem 2rem;
+        z-index: -1;
+
+        .column-inner-title {
+          font-size: 1.2rem;
+        }
+
+        ul {
+          list-style-type: disc;
+          margin-left: 6%;
+
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#define {
+  #problem {
+    .small_wrap {
+      display: grid;
+      background: #f9fafc;
+      width: 90%;
+      border-radius: 20px;
+      padding: 2rem 2rem;
+      z-index: -1;
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+#ideate {
+  .small_wrap {
+    display: grid;
+    background: #f9fafc;
+    width: 90%;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    z-index: -1;
+    ul {
+      margin-left: 4%;
+      li {
+        list-style-type: disc;
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+#evaluation {
+  .small_wrap {
+    display: grid;
+    background: #f9fafc;
+    width: 90%;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    z-index: -1;
+
+    .line-fixer {
+      padding-left: 1.6rem;
+      padding-bottom: 0.8rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
 

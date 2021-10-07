@@ -228,7 +228,7 @@ h3 {
 .content_text_kr_center_wide {
   color: #4d5256;
   text-align: center;
-  width: 60%;
+  width: 65%;
   word-break: keep-all;
   margin: auto;
   font-size: 1.1rem;
@@ -338,6 +338,7 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.2rem;
+  word-spacing: -0.38px;
   font-weight: 500; }
   .project-section-subtitle-third-center {
     padding-top: 0.5rem;
@@ -633,7 +634,12 @@ h3 {
     padding: 0.5rem 0; }
   #project-summary .project-summary-description {
     font-size: 1.2rem;
-    color: #4d5256; }
+    color: #4d5256;
+    word-spacing: -0.38px; }
+    #project-summary .project-summary-description-en {
+      font-size: 1.2rem;
+      color: #4d5256;
+      word-spacing: 0px; }
 
 #project-randr h2,
 #project-context h2 {
@@ -2434,12 +2440,78 @@ img {
     padding: 2rem 2rem;
     margin-bottom: 1rem;
     z-index: -1; }
+    .test-approach .test ul {
+      margin-left: 4%; }
+      .test-approach .test ul li {
+        list-style-type: disc;
+        margin-left: 3%; }
+        .test-approach .test ul li p {
+          font-size: 1.1rem; }
 
 #empathise1 .imgs_order {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.4rem;
   z-index: -1; }
+
+#ideate .small_wrap {
+  display: grid;
+  background: #f9fafc;
+  width: 90%;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  z-index: -1; }
+  #ideate .small_wrap ul {
+    margin-left: 4%; }
+    #ideate .small_wrap ul p {
+      font-size: 1rem; }
+
+#test .wrap_vertical {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  z-index: -1; }
+  #test .wrap_vertical .wrap {
+    display: grid;
+    background: #f9fafc;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    z-index: -1; }
+    #test .wrap_vertical .wrap p {
+      font-size: 1rem; }
+    #test .wrap_vertical .wrap ul {
+      list-style-type: disc;
+      margin-left: 6%; }
+      #test .wrap_vertical .wrap ul p {
+        font-size: 1rem; }
+
+#test .small_wrap {
+  display: grid;
+  background: #f9fafc;
+  width: 90%;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  z-index: -1; }
+  #test .small_wrap ul {
+    list-style-type: disc;
+    margin-left: 3%; }
+    #test .small_wrap ul p {
+      font-size: 1rem; }
+
+#evaluation .small_wrap {
+  display: grid;
+  background: #f9fafc;
+  width: 90%;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  z-index: -1; }
+  #evaluation .small_wrap p {
+    font-size: 1rem; }
+
+#evaluation ul li,
+#evaluation ul .line-fixer {
+  padding-left: 1rem;
+  padding-bottom: 0.6rem; }
 
 #hi-fi .added-solution {
   display: grid;
@@ -2472,12 +2544,24 @@ img {
   grid-gap: 1rem;
   z-index: -1; }
 
-#validated-hypo #content-column ul {
-  margin-left: 0%; }
-
-#validated-hypo #content-column li {
-  padding-right: 1rem;
-  padding-bottom: 0.5rem; }
+#validated-hypo .small_wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  z-index: -1; }
+  #validated-hypo .small_wrap .wrap {
+    display: grid;
+    background: #f9fafc;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    z-index: -1; }
+    #validated-hypo .small_wrap .wrap .column-inner-title {
+      font-size: 1.2rem; }
+    #validated-hypo .small_wrap .wrap ul {
+      list-style-type: disc;
+      margin-left: 6%; }
+      #validated-hypo .small_wrap .wrap ul p {
+        font-size: 1.1rem; }
 
 #research .small_wrap {
   display: grid;
@@ -2487,8 +2571,11 @@ img {
   padding: 2rem 2rem;
   z-index: -1; }
   #research .small_wrap ul {
-    margin-left: 4%; }
-    #research .small_wrap ul p {
+    margin-left: 3%; }
+  #research .small_wrap li {
+    list-style-type: disc;
+    padding-right: 1rem; }
+    #research .small_wrap li p {
       font-size: 1rem; }
 
 #empathise .interview_apporach {
@@ -2499,25 +2586,82 @@ img {
   #empathise .interview_apporach .interview {
     background: #f9fafc;
     border-radius: 20px;
-    padding-top: 0.8rem;
-    padding-bottom: 1.8rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 1.5rem 1.5rem;
     margin-bottom: 1rem;
     z-index: -1; }
     #empathise .interview_apporach .interview .project-section-subtitle-third {
       font-size: 1.1rem;
       padding-bottom: 1rem; }
-    #empathise .interview_apporach .interview .content_text_kr,
-    #empathise .interview_apporach .interview .content_text {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      padding-bottom: 0.4rem; }
+    #empathise .interview_apporach .interview ul {
+      list-style-type: disc;
+      margin-left: 8%; }
+      #empathise .interview_apporach .interview ul .content_text_kr,
+      #empathise .interview_apporach .interview ul .content_text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 0.4rem; }
 
 #empathise .research_img_order {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem; }
+
+#empathise #research .wrap_new {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  z-index: -1; }
+  #empathise #research .wrap_new .new {
+    display: grid;
+    background: #f9fafc;
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    z-index: -1; }
+    #empathise #research .wrap_new .new .column-inner-title {
+      font-size: 1.2rem; }
+    #empathise #research .wrap_new .new ul {
+      list-style-type: disc;
+      margin-left: 6%; }
+      #empathise #research .wrap_new .new ul p {
+        font-size: 1.1rem; }
+
+#define #problem .small_wrap {
+  display: grid;
+  background: #f9fafc;
+  width: 90%;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  z-index: -1; }
+  #define #problem .small_wrap p {
+    font-size: 1.1rem; }
+
+#ideate .small_wrap {
+  display: grid;
+  background: #f9fafc;
+  width: 90%;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  z-index: -1; }
+  #ideate .small_wrap ul {
+    margin-left: 4%; }
+    #ideate .small_wrap ul li {
+      list-style-type: disc; }
+      #ideate .small_wrap ul li p {
+        font-size: 1rem; }
+
+#evaluation .small_wrap {
+  display: grid;
+  background: #f9fafc;
+  width: 90%;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  z-index: -1; }
+  #evaluation .small_wrap .line-fixer {
+    padding-left: 1.6rem;
+    padding-bottom: 0.8rem;
+    font-weight: 500; }
+  #evaluation .small_wrap p {
+    font-size: 1rem; }
 
 #service-analysis {
   display: grid;

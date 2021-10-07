@@ -276,7 +276,7 @@ h3 {
 .content_text_kr_center_wide {
   color: $dark-color;
   text-align: center;
-  width: 60%;
+  width: 65%;
   word-break: keep-all;
   margin: auto;
   font-size: 1.1rem;
@@ -407,6 +407,7 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.2rem;
+  word-spacing: -0.38px;
   font-weight: 500;
 
   &-center {
@@ -790,6 +791,7 @@ h3 {
 
 #project-summary {
   padding-bottom: 2rem;
+
   .project-summary-info {
     font-size: 1rem;
     color: $weak-color;
@@ -800,6 +802,13 @@ h3 {
   .project-summary-description {
     font-size: 1.2rem;
     color: $dark-color;
+    word-spacing: -0.38px;
+
+    &-en {
+      font-size: 1.2rem;
+      color: $dark-color;
+      word-spacing: 0px;
+    }
   }
 }
 
