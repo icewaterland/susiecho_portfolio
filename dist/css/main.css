@@ -272,7 +272,8 @@ h3 {
 
 .content_text_highlight {
   color: #4d5256;
-  font-weight: 500; }
+  font-weight: 500;
+  word-spacing: -0.38px; }
 
 .p_normal {
   font-size: 0.9rem;
@@ -2711,3 +2712,17 @@ img {
   .gif_bp img {
     width: 40%;
     border-radius: 10px; }
+
+#problem .small_wrap {
+  display: grid;
+  background: #f9fafc;
+  width: 90%;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  z-index: -1; }
+  #problem .small_wrap ul {
+    margin-left: 3%; }
+    #problem .small_wrap ul li {
+      list-style-type: disc; }
+      #problem .small_wrap ul li p {
+        font-size: 1rem; }
