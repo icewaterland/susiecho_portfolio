@@ -81,7 +81,6 @@ img {
 
     &:hover {
       color: $dark-color;
-      text-decoration: underline;
     }
   }
 
@@ -129,7 +128,7 @@ img {
     color: $dark-color;
 
     &:hover {
-      color: $light-color;
+      color: $medium-color;
       transition: color 0.5s;
     }
   }
@@ -142,7 +141,6 @@ img {
   justify-content: space-between;
 
   a {
-    padding: 0 0.2rem;
     cursor: pointer;
     padding: 0rem 0.4rem;
   }
@@ -151,12 +149,20 @@ img {
 .lang-on {
   color: $dark-color;
   font-weight: 700;
-  font-size: 1rem;
+
+  &:hover {
+    color: $dark-color !important;
+    font-weight: 700 !important;
+  }
 }
 
 .lang-off {
   font-size: 1rem;
   color: $medium-color !important;
+
+  &:hover {
+    color: $dark-color !important;
+  }
 }
 
 .lang-divider {
@@ -318,6 +324,16 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
+
+  ul {
+    margin-left: 5%;
+    padding: 0;
+
+    li {
+      list-style-type: disc;
+      padding: 0 !important ;
+    }
+  }
 }
 
 .team-image {
@@ -325,16 +341,6 @@ img {
   background: transparent;
   box-shadow: none;
   width: 100%;
-}
-
-#overview2 {
-  ul {
-    li,
-    .line-fixer {
-      padding-left: 1rem;
-      padding-bottom: 0.6rem;
-    }
-  }
 }
 
 // Lock page
@@ -429,6 +435,7 @@ img {
       font-size: 1.8rem;
       padding-bottom: 1.5rem;
       padding-top: 0.2rem;
+      margin-left: -0.2rem;
     }
   }
 
@@ -579,13 +586,16 @@ img {
 
   ul {
     list-style: disc;
-    list-style-position: inside;
 
     li {
-      padding-bottom: 0.8rem;
-      letter-spacing: -0.38px;
+      padding-bottom: 0.2rem;
       font-size: 1.05rem;
-      line-height: 1.4rem;
+      margin-left: 5%;
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+      }
     }
   }
 }
@@ -618,8 +628,17 @@ img {
       padding: 2rem 2rem;
       z-index: -1;
 
-      p {
-        font-size: 1rem;
+      ul {
+        list-style: disc;
+
+        li {
+          padding-bottom: 0.2rem;
+          margin-left: 5%;
+        }
+
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -651,9 +670,13 @@ img {
     z-index: -1;
 
     ul {
-      margin-left: 0.5%;
-      p {
-        font-size: 1rem;
+      li {
+        list-style-type: disc;
+        margin-left: 3%;
+
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -796,14 +819,6 @@ img {
       font-size: 1rem;
     }
   }
-
-  ul {
-    li,
-    .line-fixer {
-      padding-left: 1rem;
-      padding-bottom: 0.6rem;
-    }
-  }
 }
 
 // Mallforever
@@ -871,6 +886,14 @@ img {
 
       .column-inner-title {
         font-size: 1.2rem;
+        letter-spacing: -0.38px;
+        font-weight: 500;
+      }
+
+      .column-inner-title-en {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        font-weight: 500;
       }
 
       ul {
@@ -895,11 +918,11 @@ img {
     z-index: -1;
 
     ul {
-      margin-left: 3%;
+      margin-left: 0%;
     }
+
     li {
       list-style-type: disc;
-      padding-right: 1rem;
 
       p {
         font-size: 1rem;
@@ -967,6 +990,14 @@ img {
 
         .column-inner-title {
           font-size: 1.2rem;
+          letter-spacing: -0.38px;
+          font-weight: 500;
+        }
+
+        .column-inner-title-en {
+          font-size: 1.2rem;
+          letter-spacing: 0;
+          font-weight: 500;
         }
 
         ul {
@@ -1127,4 +1158,50 @@ img {
       }
     }
   }
+}
+
+#define {
+  .column-inner-title {
+    font-size: 1.2rem;
+    letter-spacing: -0.38px;
+    font-weight: 500;
+  }
+
+  .column-inner-title-en {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+}
+
+// About Me
+.about-contents {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  align-items: center;
+  grid-gap: 2.5rem;
+  z-index: -1;
+
+  .about-img {
+    width: 300px;
+  }
+}
+
+.about-contents-en {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  align-items: top;
+  grid-gap: 2.5rem;
+  z-index: -1;
+
+  .about-img {
+    width: 300px;
+    padding-top: 0.7rem;
+  }
+}
+
+.loving {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
 }

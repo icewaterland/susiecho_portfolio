@@ -123,6 +123,16 @@
   z-index: -1;
 }
 
+.full-divider-for-lock {
+  position: relative;
+  border: 0;
+  opacity: 0.2;
+  border-bottom: 0.0625rem solid;
+  width: 100%;
+  border-color: $light-color;
+  z-index: -1;
+}
+
 .medium-divider {
   position: relative;
   border-bottom: 0.0625rem solid;
@@ -163,11 +173,12 @@
   }
 
   a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: $dark-color;
 
     &:hover {
-      text-decoration: underline;
+      color: $medium-color;
+      transition: color 0.5s;
     }
   }
 }
@@ -182,22 +193,22 @@
   justify-content: center;
   border-radius: 10px;
   margin: 0 0.1rem;
-  border: 0.05rem solid #f4f4f4;
+  border: 0.05rem solid #eeeff3;
 
   &:hover {
     background-color: rgb(238, 238, 248);
-    transition: color 0.5s ease-in;
+    transition: 0.5s ease-in-out !important;
   }
 
   i {
     align-items: center;
     justify-content: center;
-    color: $light-color;
-    opacity: 0.6;
+    color: $medium-color;
+    opacity: 0.8;
 
     &:hover {
       color: $dark-color;
-      transition: color 0.5s;
+      transition: 0.5s ease-in-out !important;
     }
   }
 }
@@ -272,6 +283,17 @@ h3 {
   line-height: 2rem;
   letter-spacing: -0.38px;
 }
+.content_text_kr_center_rt_en {
+  color: $dark-color;
+  text-align: center;
+  width: 65%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+}
 
 .content_text_kr_center_wide {
   color: $dark-color;
@@ -284,6 +306,17 @@ h3 {
   line-height: 2rem;
   letter-spacing: -0.38px;
 }
+.content_text_en_center_wide {
+  color: $dark-color;
+  text-align: center;
+  width: 65%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+}
 
 .content_text_kr_small {
   color: $dark-color;
@@ -291,6 +324,20 @@ h3 {
   padding: 0.4rem 0;
   line-height: 1.7rem;
   letter-spacing: -0.2px;
+}
+
+.content_text_en_small {
+  color: $dark-color;
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  line-height: 1.9rem;
+}
+.content_text_en_small_center {
+  color: $dark-color;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0rem 0;
+  line-height: 2rem;
 }
 
 .content_text_title_kr {
@@ -304,8 +351,17 @@ h3 {
   font-size: 1.1rem;
   padding: 0.2rem 0;
   padding-left: 1.5rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   letter-spacing: -0.38px;
+}
+
+.content_text_en_inner {
+  color: $dark-color;
+  font-size: 1.1rem;
+  padding: 0.2rem 0;
+  padding-left: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0;
 }
 
 .content_text_en {
@@ -313,7 +369,18 @@ h3 {
   font-size: 1.1rem;
   word-break: normal;
   padding: 0.2rem 0;
-  line-height: 1.9rem;
+  line-height: 2rem;
+  letter-spacing: 0.1px;
+}
+
+.content_text_en_center {
+  color: $dark-color;
+  font-size: 1.1rem;
+  text-align: center;
+  word-break: normal;
+  padding: 0.2rem 0;
+  line-height: 2rem;
+  letter-spacing: 0px;
 }
 
 .content_text_en_inner {
@@ -327,7 +394,13 @@ h3 {
 .content_text_highlight {
   color: $dark-color;
   font-weight: 500;
-  word-spacing: -0.38px;
+  letter-spacing: -0.38px;
+}
+
+.content_text_highlight_en {
+  color: $dark-color;
+  font-weight: 500;
+  letter-spacing: 0px;
 }
 
 .p_normal {
@@ -365,6 +438,79 @@ h3 {
   }
 }
 
+.arrange {
+  list-style-type: Decimal;
+  margin: 0rem 1rem;
+
+  li {
+    p {
+      margin-left: 0.2rem;
+    }
+  }
+}
+
+.line-fixer-en {
+  padding-left: 0.2rem;
+  padding-bottom: 1rem;
+  padding-top: 0.2rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  color: #646a6e;
+}
+
+.line-fixer {
+  padding-left: 0.2rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.2rem;
+  letter-spacing: -0.38px;
+  line-height: 1.8rem;
+  color: #646a6e;
+}
+
+.dot-list {
+  list-style-type: disc;
+  margin: 0rem 0rem;
+  li {
+    margin-left: 1.2rem;
+    padding-bottom: 0rem !important;
+
+    p {
+      margin-left: -1rem;
+    }
+  }
+}
+
+.check-list-style {
+  list-style-type: "\2705";
+  margin: 0rem 0rem;
+  li {
+    margin-left: 1.2rem;
+    padding-bottom: 0rem !important;
+
+    p {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.dot-list-inner {
+  list-style-type: disc;
+  margin: 0rem 0rem;
+
+  li {
+    margin-left: 1.2rem;
+  }
+}
+
+.dot-list-inner-for-third-con {
+  list-style-type: disc;
+  margin-left: 1.4rem;
+
+  li {
+    margin-left: 1.2rem;
+  }
+}
+
 .project-section-anchor-title {
   padding-top: 6rem;
   padding-bottom: 4rem;
@@ -397,18 +543,32 @@ h3 {
   font-size: 1.8rem;
 }
 
+.project-section-subtitle-kr {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+  letter-spacing: -0.38px;
+}
+
 .project-section-subtitle-inner {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.4rem;
   font-weight: 500;
 }
+.project-section-subtitle-inner-kr {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+}
 
 .project-section-subtitle-third {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.2rem;
-  word-spacing: -0.38px;
+  letter-spacing: -0.38px;
   font-weight: 500;
 
   &-center {
@@ -421,6 +581,14 @@ h3 {
   }
 }
 
+.project-section-subtitle-third-en {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0rem;
+}
+
 .project-section-subtitle-forth {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
@@ -428,6 +596,15 @@ h3 {
   font-weight: 500;
   word-break: keep-all;
 }
+.project-section-subtitle-forth-en {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  word-break: keep-all;
+  line-height: 2.2rem;
+}
+
 .project-section-subtitle-forth-center {
   margin-left: auto;
   margin-right: auto;
@@ -435,6 +612,16 @@ h3 {
   font-size: 1.2rem;
   font-weight: 500;
   word-break: keep-all;
+  letter-spacing: -0.38px;
+}
+.project-section-subtitle-forth-center-en {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  word-break: keep-all;
+  letter-spacing: 0px;
 }
 
 .highlight-numb {
@@ -497,11 +684,13 @@ h3 {
 }
 
 .highlight-inner-center {
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
   padding-bottom: 0.4rem;
   font-size: 1.3rem;
   font-weight: 500;
   text-align: center;
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
 
   &-kr {
     padding-top: 0.5rem;
@@ -509,7 +698,7 @@ h3 {
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
-    word-spacing: -0.38px;
+    letter-spacing: -0.38px;
   }
 }
 
@@ -578,9 +767,21 @@ h3 {
   padding: 0.5rem 0;
   font-weight: 500;
 }
+.content-inner-title-kr {
+  font-size: 1.15rem;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+}
 
 .content-inner-title-highlight {
   font-weight: 500;
+  letter-spacing: -0.38px;
+}
+
+.content-inner-title-highlight-en {
+  font-weight: 500;
+  letter-spacing: 0rem;
 }
 
 .link_simple {
@@ -646,25 +847,77 @@ h3 {
   padding-bottom: 1rem;
 }
 
-.underline-magical {
-  background-image: linear-gradient(120deg, #ffe91f 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.1em;
-  background-position: 0 100%;
-  padding: 0.2rem 0.2rem;
-  transition: background-size 0.25s ease-in-out;
-  color: $dark-color;
+.text-title-center-kr {
+  font-size: 1.7rem;
+  letter-spacing: -0.38px;
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
 
-  &:hover {
-    background-size: 100% 100%;
-    color: #333;
+#explore-more {
+  a {
+    .project-section-subtitle-third-center {
+      padding-top: 0.5rem;
+      padding-bottom: 0.4rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $medium-color;
+      text-align: center;
+    }
+
+    .project-section-subtitle-third-center-kr {
+      padding-top: 0.5rem;
+      padding-bottom: 0.4rem;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: $medium-color;
+      text-align: center;
+      letter-spacing: -0.38px;
+    }
+  }
+}
+
+#explore-more {
+  .go-main {
+    .project-section-subtitle-third-center,
+    .project-section-subtitle-third-center-kr {
+      color: $medium-color;
+      font-weight: 500;
+    }
+  }
+
+  .go-main:hover {
+    .project-section-subtitle-third-center,
+    .project-section-subtitle-third-center-kr {
+      color: $dark-color;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+.lock-bg {
+  .go-main {
+    .project-section-subtitle-third-center,
+    .project-section-subtitle-third-center-kr {
+      color: $medium-color;
+      font-weight: 500;
+    }
+  }
+
+  .go-main:hover {
+    .project-section-subtitle-third-center,
+    .project-section-subtitle-third-center-kr {
+      color: $dark-color;
+      transition: 0.5s ease-in-out;
+    }
   }
 }
 
 // .go-back-top {
 //   position: relative;
 //   float: right;
-//   background-color: #f4f4f4;
+//   background-color: $dark-color;
 //   display: inline-block;
 //   box-sizing: border-box;
 //   text-align: center;
@@ -680,7 +933,7 @@ h3 {
   text-align: right;
   color: $medium-color;
   padding: 0rem 0rem;
-  font-weight: 400;
+  font-weight: 500;
 
   i {
     padding: 0 0.5rem;
@@ -785,7 +1038,14 @@ h3 {
 .project-title {
   font-size: 2.5rem;
   color: $dark-color;
-  letter-spacing: -0.5px;
+  font-weight: 800;
+  padding-top: 4.5rem;
+}
+
+.project-title-kr {
+  font-size: 2.4rem;
+  color: $dark-color;
+  letter-spacing: -0.38px;
   font-weight: 800;
   padding-top: 4.5rem;
 }
@@ -803,13 +1063,15 @@ h3 {
   .project-summary-description {
     font-size: 1.2rem;
     color: $dark-color;
-    word-spacing: -0.38px;
+    letter-spacing: -0.38px;
+  }
 
-    &-en {
-      font-size: 1.2rem;
-      color: $dark-color;
-      word-spacing: 0px;
-    }
+  .project-summary-description-en {
+    font-size: 1.2rem;
+    color: $dark-color;
+    word-spacing: 0px;
+    letter-spacing: 0;
+    line-height: 2.1rem;
   }
 }
 
@@ -841,7 +1103,7 @@ h3 {
   grid-gap: 1rem;
   padding: 0rem 0rem;
 
-  ul {
+  .box {
     display: grid;
     grid-template-rows: repeat(1fr, 1fr);
     background: #f9fafc;
@@ -851,7 +1113,18 @@ h3 {
   }
 
   .column-inner-title {
-    font-size: 1.15rem;
     padding-bottom: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: -0.38px;
+    font-weight: 500;
+    line-height: 2.2rem;
+  }
+
+  .column-inner-title-en {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    font-weight: 500;
+    line-height: 2.4rem;
   }
 }

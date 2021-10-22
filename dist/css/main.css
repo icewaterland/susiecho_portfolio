@@ -105,6 +105,15 @@
   border-color: #646f7c;
   z-index: -1; }
 
+.full-divider-for-lock {
+  position: relative;
+  border: 0;
+  opacity: 0.2;
+  border-bottom: 0.0625rem solid;
+  width: 100%;
+  border-color: #646f7c;
+  z-index: -1; }
+
 .medium-divider {
   position: relative;
   border-bottom: 0.0625rem solid;
@@ -139,10 +148,11 @@
   .anchor-nav li {
     padding: 0.3rem 0; }
   .anchor-nav a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #4d5256; }
     .anchor-nav a:hover {
-      text-decoration: underline; }
+      color: #878d91;
+      transition: color 0.5s; }
 
 .icon-box {
   width: 48px;
@@ -153,18 +163,18 @@
   justify-content: center;
   border-radius: 10px;
   margin: 0 0.1rem;
-  border: 0.05rem solid #f4f4f4; }
+  border: 0.05rem solid #eeeff3; }
   .icon-box:hover {
     background-color: #eeeef8;
-    transition: color 0.5s ease-in; }
+    transition: 0.5s ease-in-out !important; }
   .icon-box i {
     align-items: center;
     justify-content: center;
-    color: #646f7c;
-    opacity: 0.6; }
+    color: #878d91;
+    opacity: 0.8; }
     .icon-box i:hover {
       color: #4d5256;
-      transition: color 0.5s; }
+      transition: 0.5s ease-in-out !important; }
 
 h1 {
   font-size: 2rem;
@@ -225,6 +235,17 @@ h3 {
   line-height: 2rem;
   letter-spacing: -0.38px; }
 
+.content_text_kr_center_rt_en {
+  color: #4d5256;
+  text-align: center;
+  width: 65%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  line-height: 2rem;
+  letter-spacing: 0; }
+
 .content_text_kr_center_wide {
   color: #4d5256;
   text-align: center;
@@ -236,12 +257,36 @@ h3 {
   line-height: 2rem;
   letter-spacing: -0.38px; }
 
+.content_text_en_center_wide {
+  color: #4d5256;
+  text-align: center;
+  width: 65%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  line-height: 2rem;
+  letter-spacing: 0; }
+
 .content_text_kr_small {
   color: #4d5256;
   font-size: 1rem;
   padding: 0.4rem 0;
   line-height: 1.7rem;
   letter-spacing: -0.2px; }
+
+.content_text_en_small {
+  color: #4d5256;
+  font-size: 1rem;
+  padding: 0.4rem 0;
+  line-height: 1.9rem; }
+
+.content_text_en_small_center {
+  color: #4d5256;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0rem 0;
+  line-height: 2rem; }
 
 .content_text_title_kr {
   font-size: 1.1rem;
@@ -253,15 +298,33 @@ h3 {
   font-size: 1.1rem;
   padding: 0.2rem 0;
   padding-left: 1.5rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   letter-spacing: -0.38px; }
+
+.content_text_en_inner {
+  color: #4d5256;
+  font-size: 1.1rem;
+  padding: 0.2rem 0;
+  padding-left: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0; }
 
 .content_text_en {
   color: #4d5256;
   font-size: 1.1rem;
   word-break: normal;
   padding: 0.2rem 0;
-  line-height: 1.9rem; }
+  line-height: 2rem;
+  letter-spacing: 0.1px; }
+
+.content_text_en_center {
+  color: #4d5256;
+  font-size: 1.1rem;
+  text-align: center;
+  word-break: normal;
+  padding: 0.2rem 0;
+  line-height: 2rem;
+  letter-spacing: 0px; }
 
 .content_text_en_inner {
   color: #4d5256;
@@ -273,7 +336,12 @@ h3 {
 .content_text_highlight {
   color: #4d5256;
   font-weight: 500;
-  word-spacing: -0.38px; }
+  letter-spacing: -0.38px; }
+
+.content_text_highlight_en {
+  color: #4d5256;
+  font-weight: 500;
+  letter-spacing: 0px; }
 
 .p_normal {
   font-size: 0.9rem;
@@ -300,6 +368,58 @@ h3 {
   line-height: 1.8rem; }
   #project-header ul li {
     font-size: 0.9rem; }
+
+.arrange {
+  list-style-type: Decimal;
+  margin: 0rem 1rem; }
+  .arrange li p {
+    margin-left: 0.2rem; }
+
+.line-fixer-en {
+  padding-left: 0.2rem;
+  padding-bottom: 1rem;
+  padding-top: 0.2rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  color: #646a6e; }
+
+.line-fixer {
+  padding-left: 0.2rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.2rem;
+  letter-spacing: -0.38px;
+  line-height: 1.8rem;
+  color: #646a6e; }
+
+.dot-list {
+  list-style-type: disc;
+  margin: 0rem 0rem; }
+  .dot-list li {
+    margin-left: 1.2rem;
+    padding-bottom: 0rem !important; }
+    .dot-list li p {
+      margin-left: -1rem; }
+
+.check-list-style {
+  list-style-type: "\2705";
+  margin: 0rem 0rem; }
+  .check-list-style li {
+    margin-left: 1.2rem;
+    padding-bottom: 0rem !important; }
+    .check-list-style li p {
+      margin-left: 0.5rem; }
+
+.dot-list-inner {
+  list-style-type: disc;
+  margin: 0rem 0rem; }
+  .dot-list-inner li {
+    margin-left: 1.2rem; }
+
+.dot-list-inner-for-third-con {
+  list-style-type: disc;
+  margin-left: 1.4rem; }
+  .dot-list-inner-for-third-con li {
+    margin-left: 1.2rem; }
 
 .project-section-anchor-title {
   padding-top: 6rem;
@@ -329,17 +449,30 @@ h3 {
   padding-bottom: 0.5rem;
   font-size: 1.8rem; }
 
+.project-section-subtitle-kr {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+  letter-spacing: -0.38px; }
+
 .project-section-subtitle-inner {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.4rem;
   font-weight: 500; }
 
+.project-section-subtitle-inner-kr {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.38px; }
+
 .project-section-subtitle-third {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.2rem;
-  word-spacing: -0.38px;
+  letter-spacing: -0.38px;
   font-weight: 500; }
   .project-section-subtitle-third-center {
     padding-top: 0.5rem;
@@ -349,6 +482,13 @@ h3 {
     color: #4d5256;
     text-align: center; }
 
+.project-section-subtitle-third-en {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0rem; }
+
 .project-section-subtitle-forth {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
@@ -356,13 +496,31 @@ h3 {
   font-weight: 500;
   word-break: keep-all; }
 
+.project-section-subtitle-forth-en {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  word-break: keep-all;
+  line-height: 2.2rem; }
+
 .project-section-subtitle-forth-center {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
-  word-break: keep-all; }
+  word-break: keep-all;
+  letter-spacing: -0.38px; }
+
+.project-section-subtitle-forth-center-en {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  word-break: keep-all;
+  letter-spacing: 0px; }
 
 .highlight-numb {
   font-size: 2.5rem;
@@ -416,18 +574,20 @@ h3 {
   font-display: block; }
 
 .highlight-inner-center {
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
   padding-bottom: 0.4rem;
   font-size: 1.3rem;
   font-weight: 500;
-  text-align: center; }
+  text-align: center;
+  line-height: 2.5rem;
+  letter-spacing: 0rem; }
   .highlight-inner-center-kr {
     padding-top: 0.5rem;
     padding-bottom: 0.4rem;
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
-    word-spacing: -0.38px; }
+    letter-spacing: -0.38px; }
 
 .normal-text-bold {
   font-weight: 500; }
@@ -485,8 +645,19 @@ h3 {
   padding: 0.5rem 0;
   font-weight: 500; }
 
+.content-inner-title-kr {
+  font-size: 1.15rem;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  letter-spacing: -0.38px; }
+
 .content-inner-title-highlight {
-  font-weight: 500; }
+  font-weight: 500;
+  letter-spacing: -0.38px; }
+
+.content-inner-title-highlight-en {
+  font-weight: 500;
+  letter-spacing: 0rem; }
 
 .link_simple {
   text-decoration: underline;
@@ -538,24 +709,56 @@ h3 {
   font-weight: 800;
   padding-bottom: 1rem; }
 
-.underline-magical {
-  background-image: linear-gradient(120deg, #ffe91f 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.1em;
-  background-position: 0 100%;
-  padding: 0.2rem 0.2rem;
-  transition: background-size 0.25s ease-in-out;
-  color: #4d5256; }
-  .underline-magical:hover {
-    background-size: 100% 100%;
-    color: #333; }
+.text-title-center-kr {
+  font-size: 1.7rem;
+  letter-spacing: -0.38px;
+  text-align: center;
+  font-weight: 800;
+  padding-bottom: 1rem; }
+
+#explore-more a .project-section-subtitle-third-center {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #878d91;
+  text-align: center; }
+
+#explore-more a .project-section-subtitle-third-center-kr {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #878d91;
+  text-align: center;
+  letter-spacing: -0.38px; }
+
+#explore-more .go-main .project-section-subtitle-third-center,
+#explore-more .go-main .project-section-subtitle-third-center-kr {
+  color: #878d91;
+  font-weight: 500; }
+
+#explore-more .go-main:hover .project-section-subtitle-third-center,
+#explore-more .go-main:hover .project-section-subtitle-third-center-kr {
+  color: #4d5256;
+  transition: 0.5s ease-in-out; }
+
+.lock-bg .go-main .project-section-subtitle-third-center,
+.lock-bg .go-main .project-section-subtitle-third-center-kr {
+  color: #878d91;
+  font-weight: 500; }
+
+.lock-bg .go-main:hover .project-section-subtitle-third-center,
+.lock-bg .go-main:hover .project-section-subtitle-third-center-kr {
+  color: #4d5256;
+  transition: 0.5s ease-in-out; }
 
 .go-back-top-text {
   display: inline-block;
   text-align: right;
   color: #878d91;
   padding: 0rem 0rem;
-  font-weight: 400; }
+  font-weight: 500; }
   .go-back-top-text i {
     padding: 0 0.5rem; }
   .go-back-top-text:hover {
@@ -622,7 +825,13 @@ h3 {
 .project-title {
   font-size: 2.5rem;
   color: #4d5256;
-  letter-spacing: -0.5px;
+  font-weight: 800;
+  padding-top: 4.5rem; }
+
+.project-title-kr {
+  font-size: 2.4rem;
+  color: #4d5256;
+  letter-spacing: -0.38px;
   font-weight: 800;
   padding-top: 4.5rem; }
 
@@ -636,11 +845,13 @@ h3 {
   #project-summary .project-summary-description {
     font-size: 1.2rem;
     color: #4d5256;
-    word-spacing: -0.38px; }
-    #project-summary .project-summary-description-en {
-      font-size: 1.2rem;
-      color: #4d5256;
-      word-spacing: 0px; }
+    letter-spacing: -0.38px; }
+  #project-summary .project-summary-description-en {
+    font-size: 1.2rem;
+    color: #4d5256;
+    word-spacing: 0px;
+    letter-spacing: 0;
+    line-height: 2.1rem; }
 
 #project-randr h2,
 #project-context h2 {
@@ -662,7 +873,7 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   padding: 0rem 0rem; }
-  #content-column ul {
+  #content-column .box {
     display: grid;
     grid-template-rows: repeat(1fr, 1fr);
     background: #f9fafc;
@@ -670,8 +881,17 @@ h3 {
     border-radius: 20px;
     z-index: -1; }
   #content-column .column-inner-title {
-    font-size: 1.15rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: -0.38px;
+    font-weight: 500;
+    line-height: 2.2rem; }
+  #content-column .column-inner-title-en {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    font-weight: 500;
+    line-height: 2.4rem; }
 
 @media only screen and (min-width: 1400px) {
   #header-home .header-content .header-texts .for-mobile {
@@ -2015,8 +2235,7 @@ img {
     font-size: 2.3rem;
     align-items: center; }
     #main-nav #logo-text:hover {
-      color: #4d5256;
-      text-decoration: underline; }
+      color: #4d5256; }
   #main-nav .logo-text-style {
     display: inline-block;
     margin-left: 2px;
@@ -2048,7 +2267,7 @@ img {
     text-decoration: none;
     color: #4d5256; }
     #main-nav a:hover {
-      color: #646f7c;
+      color: #878d91;
       transition: color 0.5s; }
 
 .lang-switcher {
@@ -2056,18 +2275,21 @@ img {
   align-items: center;
   justify-content: space-between; }
   .lang-switcher a {
-    padding: 0 0.2rem;
     cursor: pointer;
     padding: 0rem 0.4rem; }
 
 .lang-on {
   color: #4d5256;
-  font-weight: 700;
-  font-size: 1rem; }
+  font-weight: 700; }
+  .lang-on:hover {
+    color: #4d5256 !important;
+    font-weight: 700 !important; }
 
 .lang-off {
   font-size: 1rem;
   color: #878d91 !important; }
+  .lang-off:hover {
+    color: #4d5256 !important; }
 
 .lang-divider {
   font-size: 0.8rem;
@@ -2178,17 +2400,18 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem; }
+  #brief-problems ul {
+    margin-left: 5%;
+    padding: 0; }
+    #brief-problems ul li {
+      list-style-type: disc;
+      padding: 0 !important; }
 
 .team-image {
   padding: 0;
   background: transparent;
   box-shadow: none;
   width: 100%; }
-
-#overview2 ul li,
-#overview2 ul .line-fixer {
-  padding-left: 1rem;
-  padding-bottom: 0.6rem; }
 
 .lock-bg {
   background-color: #f9fafc;
@@ -2255,7 +2478,8 @@ img {
     .mission-main-text h3 {
       font-size: 1.8rem;
       padding-bottom: 1.5rem;
-      padding-top: 0.2rem; }
+      padding-top: 0.2rem;
+      margin-left: -0.2rem; }
   .mission-box {
     background: #f9fafc;
     border-radius: 20px;
@@ -2363,13 +2587,14 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4rem; }
   .self ul {
-    list-style: disc;
-    list-style-position: inside; }
+    list-style: disc; }
     .self ul li {
-      padding-bottom: 0.8rem;
-      letter-spacing: -0.38px;
+      padding-bottom: 0.2rem;
       font-size: 1.05rem;
-      line-height: 1.4rem; }
+      margin-left: 5%; }
+      .self ul li p {
+        font-size: 1.1rem;
+        line-height: 1.9rem; }
 
 .self-normal ul {
   list-style: disc;
@@ -2391,8 +2616,13 @@ img {
     border-radius: 20px;
     padding: 2rem 2rem;
     z-index: -1; }
-    #first-prototype .tests .test p {
-      font-size: 1rem; }
+    #first-prototype .tests .test ul {
+      list-style: disc; }
+      #first-prototype .tests .test ul li {
+        padding-bottom: 0.2rem;
+        margin-left: 5%; }
+      #first-prototype .tests .test ul p {
+        font-size: 1rem; }
 
 #estimation .small_wrap,
 #empathise .small_wrap {
@@ -2413,9 +2643,10 @@ img {
   border-radius: 20px;
   padding: 2rem 2rem;
   z-index: -1; }
-  #empathise .small_wrap ul {
-    margin-left: 0.5%; }
-    #empathise .small_wrap ul p {
+  #empathise .small_wrap ul li {
+    list-style-type: disc;
+    margin-left: 3%; }
+    #empathise .small_wrap ul li p {
       font-size: 1rem; }
 
 #ideate #solution .small_wrap {
@@ -2509,11 +2740,6 @@ img {
   #evaluation .small_wrap p {
     font-size: 1rem; }
 
-#evaluation ul li,
-#evaluation ul .line-fixer {
-  padding-left: 1rem;
-  padding-bottom: 0.6rem; }
-
 #hi-fi .added-solution {
   display: grid;
   align-items: center;
@@ -2557,7 +2783,13 @@ img {
     padding: 2rem 2rem;
     z-index: -1; }
     #validated-hypo .small_wrap .wrap .column-inner-title {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      letter-spacing: -0.38px;
+      font-weight: 500; }
+    #validated-hypo .small_wrap .wrap .column-inner-title-en {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+      font-weight: 500; }
     #validated-hypo .small_wrap .wrap ul {
       list-style-type: disc;
       margin-left: 6%; }
@@ -2572,10 +2804,9 @@ img {
   padding: 2rem 2rem;
   z-index: -1; }
   #research .small_wrap ul {
-    margin-left: 3%; }
+    margin-left: 0%; }
   #research .small_wrap li {
-    list-style-type: disc;
-    padding-right: 1rem; }
+    list-style-type: disc; }
     #research .small_wrap li p {
       font-size: 1rem; }
 
@@ -2619,7 +2850,13 @@ img {
     padding: 2rem 2rem;
     z-index: -1; }
     #empathise #research .wrap_new .new .column-inner-title {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      letter-spacing: -0.38px;
+      font-weight: 500; }
+    #empathise #research .wrap_new .new .column-inner-title-en {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+      font-weight: 500; }
     #empathise #research .wrap_new .new ul {
       list-style-type: disc;
       margin-left: 6%; }
@@ -2726,3 +2963,37 @@ img {
       list-style-type: disc; }
       #problem .small_wrap ul li p {
         font-size: 1rem; }
+
+#define .column-inner-title {
+  font-size: 1.2rem;
+  letter-spacing: -0.38px;
+  font-weight: 500; }
+
+#define .column-inner-title-en {
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  font-weight: 500; }
+
+.about-contents {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  align-items: center;
+  grid-gap: 2.5rem;
+  z-index: -1; }
+  .about-contents .about-img {
+    width: 300px; }
+
+.about-contents-en {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  align-items: top;
+  grid-gap: 2.5rem;
+  z-index: -1; }
+  .about-contents-en .about-img {
+    width: 300px;
+    padding-top: 0.7rem; }
+
+.loving {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem; }
