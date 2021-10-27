@@ -216,7 +216,7 @@ h3 {
 .content_text_kr_center {
   color: #4d5256;
   text-align: center;
-  width: 65%;
+  width: 66%;
   word-break: keep-all;
   margin: auto;
   font-size: 1.1rem;
@@ -279,7 +279,8 @@ h3 {
   color: #4d5256;
   font-size: 1rem;
   padding: 0.4rem 0;
-  line-height: 1.9rem; }
+  line-height: 1.8rem;
+  word-break: keep-all; }
 
 .content_text_en_small_center {
   color: #4d5256;
@@ -319,12 +320,13 @@ h3 {
 
 .content_text_en_center {
   color: #4d5256;
-  font-size: 1.1rem;
   text-align: center;
-  word-break: normal;
-  padding: 0.2rem 0;
-  line-height: 2rem;
-  letter-spacing: 0px; }
+  width: 65%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
+  line-height: 2rem; }
 
 .content_text_en_inner {
   color: #4d5256;
@@ -518,6 +520,7 @@ h3 {
   margin-right: auto;
   text-align: center;
   font-size: 1.2rem;
+  line-height: 2.5rem;
   font-weight: 500;
   word-break: keep-all;
   letter-spacing: 0px; }
@@ -2897,7 +2900,16 @@ img {
   #evaluation .small_wrap .line-fixer {
     padding-left: 1.6rem;
     padding-bottom: 0.8rem;
-    font-weight: 500; }
+    font-weight: 400;
+    word-break: keep-all;
+    letter-spacing: -0.38px; }
+  #evaluation .small_wrap .line-fixer-en {
+    padding-left: 1.6rem;
+    padding-bottom: 0.8rem;
+    font-weight: 400;
+    word-break: keep-all;
+    letter-spacing: 0rem;
+    line-height: 1.8rem; }
   #evaluation .small_wrap p {
     font-size: 1rem; }
 
@@ -2915,6 +2927,8 @@ img {
     z-index: -1; }
     #service-analysis .analysis-img {
       padding: 0rem 1.5rem; }
+    #service-analysis .analysis .content_text_en_center {
+      width: 100%; }
 
 #assumption .imgs_order {
   display: grid;
@@ -2940,7 +2954,8 @@ img {
     font-weight: 400;
     font-size: 1rem;
     padding-top: 2rem;
-    text-align: left; }
+    text-align: left;
+    align-self: flex-end; }
 
 .gif_bp {
   display: flex;

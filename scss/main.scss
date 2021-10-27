@@ -1063,7 +1063,18 @@ img {
     .line-fixer {
       padding-left: 1.6rem;
       padding-bottom: 0.8rem;
-      font-weight: 500;
+      font-weight: 400;
+      word-break: keep-all;
+      letter-spacing: -0.38px;
+    }
+
+    .line-fixer-en {
+      padding-left: 1.6rem;
+      padding-bottom: 0.8rem;
+      font-weight: 400;
+      word-break: keep-all;
+      letter-spacing: 0rem;
+      line-height: 1.8rem;
     }
 
     p {
@@ -1089,6 +1100,10 @@ img {
 
     &-img {
       padding: 0rem 1.5rem;
+    }
+
+    .content_text_en_center {
+      width: 100%;
     }
   }
 }
@@ -1124,6 +1139,7 @@ img {
       font-size: 1rem;
       padding-top: 2rem;
       text-align: left;
+      align-self: flex-end;
     }
   }
 }

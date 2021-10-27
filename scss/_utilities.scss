@@ -263,7 +263,7 @@ h3 {
 .content_text_kr_center {
   color: $dark-color;
   text-align: center;
-  width: 65%;
+  width: 66%;
   word-break: keep-all;
   margin: auto;
   font-size: 1.1rem;
@@ -330,7 +330,8 @@ h3 {
   color: $dark-color;
   font-size: 1rem;
   padding: 0.4rem 0;
-  line-height: 1.9rem;
+  line-height: 1.8rem;
+  word-break: keep-all;
 }
 .content_text_en_small_center {
   color: $dark-color;
@@ -375,12 +376,13 @@ h3 {
 
 .content_text_en_center {
   color: $dark-color;
-  font-size: 1.1rem;
   text-align: center;
-  word-break: normal;
-  padding: 0.2rem 0;
+  width: 65%;
+  word-break: keep-all;
+  margin: auto;
+  font-size: 1.1rem;
+  padding-top: 0.6rem;
   line-height: 2rem;
-  letter-spacing: 0px;
 }
 
 .content_text_en_inner {
@@ -619,6 +621,7 @@ h3 {
   margin-right: auto;
   text-align: center;
   font-size: 1.2rem;
+  line-height: 2.5rem;
   font-weight: 500;
   word-break: keep-all;
   letter-spacing: 0px;
