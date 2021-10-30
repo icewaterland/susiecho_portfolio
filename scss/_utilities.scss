@@ -25,7 +25,6 @@
   max-width: $project-container-width;
   padding: 0 2rem;
   margin: auto;
-  overflow: hidden;
 }
 
 .inner-section-container {
@@ -37,7 +36,6 @@
   width: 100% no-repeat / cover;
   height: auto;
   image-rendering: auto;
-  overflow-x: hidden;
 }
 
 .grid-half-image-container {
@@ -48,7 +46,6 @@
   margin-right: auto;
   padding-left: 1rem;
   image-rendering: auto;
-  overflow-x: hidden;
 }
 
 .grid-full-image-container {
@@ -86,7 +83,6 @@
   max-width: 1080px;
   padding: 0 1.5rem;
   margin: auto;
-  overflow: hidden;
   text-align: right;
   font-weight: 600;
 }
@@ -235,20 +231,24 @@ h3 {
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+  word-break: keep-all;
 }
 
 .text-center {
   text-align: center;
+  word-break: keep-all;
 }
 
 .p_bold {
   font-weight: 600;
   padding-top: 0.5rem;
+  word-break: keep-all;
 }
 
 .p_medium_bold {
   font-weight: 500;
   padding-top: 0.5rem;
+  word-break: keep-all;
 }
 
 .content_text_kr {
@@ -324,6 +324,7 @@ h3 {
   padding: 0.4rem 0;
   line-height: 1.7rem;
   letter-spacing: -0.2px;
+  word-break: keep-all;
 }
 
 .content_text_en_small {
@@ -339,12 +340,14 @@ h3 {
   text-align: center;
   padding: 0rem 0;
   line-height: 2rem;
+  word-break: keep-all;
 }
 
 .content_text_title_kr {
   font-size: 1.1rem;
   font-weight: 500;
   padding-bottom: 0.5rem;
+  word-break: keep-all;
 }
 
 .content_text_kr_inner {
@@ -354,6 +357,7 @@ h3 {
   padding-left: 1.5rem;
   line-height: 1.9rem;
   letter-spacing: -0.38px;
+  word-break: keep-all;
 }
 
 .content_text_en_inner {
@@ -363,6 +367,7 @@ h3 {
   padding-left: 1.5rem;
   line-height: 2rem;
   letter-spacing: 0;
+  word-break: keep-all;
 }
 
 .content_text_en {
@@ -372,6 +377,7 @@ h3 {
   padding: 0.2rem 0;
   line-height: 2rem;
   letter-spacing: 0.1px;
+  word-break: keep-all;
 }
 
 .content_text_en_center {
@@ -391,27 +397,32 @@ h3 {
   padding: 0.2rem 0;
   padding-left: 1.5rem;
   line-height: 1.8rem;
+  word-break: keep-all;
 }
 
 .content_text_highlight {
   color: $dark-color;
   font-weight: 500;
   letter-spacing: -0.38px;
+  word-break: keep-all;
 }
 
 .content_text_highlight_en {
   color: $dark-color;
   font-weight: 500;
   letter-spacing: 0px;
+  word-break: keep-all;
 }
 
 .p_normal {
   font-size: 0.9rem;
   padding: 0rem 1rem;
+  word-break: keep-all;
 }
 
 .header-title {
   font-size: 0.8rem;
+  word-break: keep-all;
 }
 
 .section-title {
@@ -419,6 +430,7 @@ h3 {
   color: $dark-color;
   padding: 0rem 1rem;
   letter-spacing: -0.38px;
+  word-break: keep-all;
 }
 
 .project-header-title {
@@ -428,6 +440,7 @@ h3 {
   color: $medium-color;
   letter-spacing: 0.1rem;
   font-weight: 400;
+  word-break: keep-all;
 }
 
 #project-header {
@@ -458,6 +471,7 @@ h3 {
   letter-spacing: 0rem;
   line-height: 1.6rem;
   color: #646a6e;
+  word-break: keep-all;
 }
 
 .line-fixer {
@@ -467,6 +481,7 @@ h3 {
   letter-spacing: -0.38px;
   line-height: 1.8rem;
   color: #646a6e;
+  word-break: keep-all;
 }
 
 .dot-list {
@@ -521,12 +536,14 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: $weak-color;
+  word-break: keep-all;
 }
 
 .project-section-title {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 1.8rem;
+  word-break: keep-all;
 }
 
 .anchor-marker {
@@ -543,6 +560,7 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 1.8rem;
+  word-break: keep-all;
 }
 
 .project-section-subtitle-kr {
@@ -550,6 +568,7 @@ h3 {
   padding-bottom: 0.5rem;
   font-size: 1.7rem;
   letter-spacing: -0.38px;
+  word-break: keep-all;
 }
 
 .project-section-subtitle-inner {
@@ -557,13 +576,16 @@ h3 {
   padding-bottom: 0.4rem;
   font-size: 1.4rem;
   font-weight: 500;
+  word-break: keep-all;
 }
+
 .project-section-subtitle-inner-kr {
   padding-top: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: -0.38px;
+  word-break: keep-all;
 }
 
 .project-section-subtitle-third {
@@ -572,6 +594,7 @@ h3 {
   font-size: 1.2rem;
   letter-spacing: -0.38px;
   font-weight: 500;
+  word-break: keep-all;
 
   &-center {
     padding-top: 0.5rem;
@@ -580,6 +603,7 @@ h3 {
     font-weight: 500;
     color: $dark-color;
     text-align: center;
+    word-break: keep-all;
   }
 }
 
@@ -589,6 +613,7 @@ h3 {
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0rem;
+  word-break: keep-all;
 }
 
 .project-section-subtitle-forth {
@@ -694,6 +719,7 @@ h3 {
   text-align: center;
   line-height: 2.5rem;
   letter-spacing: 0rem;
+  word-break: keep-all;
 
   &-kr {
     padding-top: 0.5rem;
@@ -702,6 +728,7 @@ h3 {
     font-weight: 500;
     text-align: center;
     letter-spacing: -0.38px;
+    word-break: keep-all;
   }
 }
 
@@ -725,6 +752,7 @@ h3 {
   text-align: right;
   font-weight: 400;
   letter-spacing: 0.25px;
+  word-break: keep-all;
 
   &-bold {
     font-size: 0.9rem;
@@ -732,6 +760,7 @@ h3 {
     padding-top: 0.5rem;
     padding-bottom: 0.2rem;
     line-height: 1.5rem;
+    word-break: keep-all;
   }
 }
 
@@ -962,6 +991,19 @@ h3 {
   &-text-title {
     font-size: 1.8rem;
     padding-bottom: 0.1rem;
+    letter-spacing: 0;
+    color: $dark-color;
+
+    &:hover {
+      text-decoration: underline;
+      color: #333;
+    }
+  }
+
+  &-text-title-kr {
+    font-size: 1.8rem;
+    padding-bottom: 0.1rem;
+    letter-spacing: -0.38px;
     color: $dark-color;
 
     &:hover {
@@ -978,16 +1020,21 @@ h3 {
   }
 
   &-description {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding-top: 0.5rem;
     padding-bottom: 2rem;
     color: $dark-color;
+    letter-spacing: 0rem;
+    line-height: 1.9rem;
   }
 
   &-description-kr {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding-top: 0.5rem;
     color: $dark-color;
     padding-bottom: 2rem;
     letter-spacing: -0.38px;
+    line-height: 1.8rem;
   }
 }
 
