@@ -940,6 +940,27 @@ h3 {
     line-height: 2.4rem; }
 
 @media only screen and (min-width: 1400px) {
+  #header-home .header-content .header-texts .header-main-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.8rem;
+    padding: 1rem 0rem; }
+  #header-home .header-content .header-texts .header-sub {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem; }
+    #header-home .header-content .header-texts .header-sub br {
+      display: none; }
+  #header-home .header-content .header-texts .header-sub-kr {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem; }
+  #header-home .header-content .header-texts .header-current {
+    font-size: 0.9rem; }
+    #header-home .header-content .header-texts .header-current-highlight {
+      font-weight: 500;
+      color: #333; }
   #header-home .header-content .header-texts .for-mobile {
     display: none; }
   #prototype .logic-img {
@@ -966,6 +987,27 @@ h3 {
       text-align: left; } }
 
 @media only screen and (max-width: 1400px) {
+  #header-home .header-content .header-texts .header-main-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.8rem;
+    padding: 1rem 0rem; }
+  #header-home .header-content .header-texts .header-sub {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem; }
+    #header-home .header-content .header-texts .header-sub br {
+      display: none; }
+  #header-home .header-content .header-texts .header-sub-kr {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem; }
+  #header-home .header-content .header-texts .header-current {
+    font-size: 0.9rem; }
+    #header-home .header-content .header-texts .header-current-highlight {
+      font-weight: 500;
+      color: #333; }
   #header-home .header-content .header-texts .for-mobile {
     display: none; }
   #anchor-nav {
@@ -1024,6 +1066,7 @@ h3 {
         padding: 1rem 0rem; }
       #header-home .header-content .header-title .header-texts .header-sub {
         font-size: 1.3rem;
+        line-height: 2.2rem;
         font-weight: 500;
         padding-bottom: 0.5rem; }
       #header-home .header-content .header-title .header-texts .header-sub-kr {
@@ -1037,6 +1080,34 @@ h3 {
           color: #333; } }
 
 @media only screen and (max-width: 1200px) {
+  #header-home .header-content {
+    text-align: left; }
+    #header-home .header-content .header-title {
+      height: 70vh;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      width: 70%;
+      padding-left: 14px; }
+      #header-home .header-content .header-title .header-texts .header-main-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 3.8rem;
+        padding: 1rem 0rem; }
+      #header-home .header-content .header-title .header-texts .header-sub {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+        font-weight: 500;
+        padding-bottom: 0.5rem; }
+      #header-home .header-content .header-title .header-texts .header-sub-kr {
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding-bottom: 0.5rem; }
+      #header-home .header-content .header-title .header-texts .header-current {
+        font-size: 0.9rem; }
+        #header-home .header-content .header-title .header-texts .header-current-highlight {
+          font-weight: 500;
+          color: #333; }
   #painpoint .grid-full-image-container {
     position: relative;
     margin: 0rem 10rem;
@@ -1140,11 +1211,11 @@ h3 {
         line-height: 3.4rem;
         padding: 1rem 0rem; }
       #header-home .header-content .header-title .header-texts .header-sub {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 500;
         padding-bottom: 0.5rem; }
       #header-home .header-content .header-title .header-texts .header-sub-kr {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 500;
         padding-bottom: 0.5rem; }
       #header-home .header-content .header-title .header-texts .header-current {
@@ -3273,7 +3344,7 @@ img {
       font-weight: 500;
       padding-bottom: 0.5rem;
       letter-spacing: 0;
-      line-height: 2rem;
+      line-height: 2.2rem;
       word-break: keep-all; }
     #header-home .header-content .header-current {
       font-size: 0.9rem; }

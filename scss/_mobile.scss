@@ -2,6 +2,38 @@
   #header-home {
     .header-content {
       .header-texts {
+        .header-main-title {
+          font-size: 2.5rem;
+          font-weight: 600;
+          line-height: 3.8rem;
+          padding: 1rem 0rem;
+        }
+
+        .header-sub {
+          font-size: 1.3rem;
+          line-height: 2.2rem;
+          font-weight: 500;
+          padding-bottom: 0.5rem;
+
+          br {
+            display: none;
+          }
+        }
+
+        .header-sub-kr {
+          font-size: 1.3rem;
+          font-weight: 500;
+          padding-bottom: 0.5rem;
+        }
+
+        .header-current {
+          font-size: 0.9rem;
+
+          &-highlight {
+            font-weight: 500;
+            color: #333;
+          }
+        }
         .for-mobile {
           display: none;
         }
@@ -50,6 +82,38 @@
   #header-home {
     .header-content {
       .header-texts {
+        .header-main-title {
+          font-size: 2.5rem;
+          font-weight: 600;
+          line-height: 3.8rem;
+          padding: 1rem 0rem;
+        }
+
+        .header-sub {
+          font-size: 1.3rem;
+          line-height: 2.2rem;
+          font-weight: 500;
+          padding-bottom: 0.5rem;
+
+          br {
+            display: none;
+          }
+        }
+
+        .header-sub-kr {
+          font-size: 1.3rem;
+          font-weight: 500;
+          padding-bottom: 0.5rem;
+        }
+
+        .header-current {
+          font-size: 0.9rem;
+
+          &-highlight {
+            font-weight: 500;
+            color: #333;
+          }
+        }
         .for-mobile {
           display: none;
         }
@@ -139,6 +203,7 @@
 
           .header-sub {
             font-size: 1.3rem;
+            line-height: 2.2rem;
             font-weight: 500;
             padding-bottom: 0.5rem;
           }
@@ -164,6 +229,51 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  #header-home {
+    .header-content {
+      text-align: left;
+
+      .header-title {
+        height: 70vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 70%;
+        padding-left: 14px;
+
+        .header-texts {
+          .header-main-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 3.8rem;
+            padding: 1rem 0rem;
+          }
+
+          .header-sub {
+            font-size: 1.3rem;
+            line-height: 2.2rem;
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+          }
+
+          .header-sub-kr {
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding-bottom: 0.5rem;
+          }
+
+          .header-current {
+            font-size: 0.9rem;
+
+            &-highlight {
+              font-weight: 500;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
   #painpoint {
     .grid-full-image-container {
       position: relative;
@@ -321,13 +431,13 @@
           }
 
           .header-sub {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 500;
             padding-bottom: 0.5rem;
           }
 
           .header-sub-kr {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 500;
             padding-bottom: 0.5rem;
           }
